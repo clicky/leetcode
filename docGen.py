@@ -33,7 +33,7 @@ def gen_docs():
             for k in t:
                 file.write(f"## {k}\n")
                 for v in t[k]:
-                    file.write(f"- [{v}](https://leetcode.com/problems/<{v.lower().replace(' ', '-')}>)\n")
+                    file.write(f"- [{v}](https://leetcode.com/problems/<{v.split(' - ')[1].lower().replace(' ', '-')}>)\n")
                     ls = "    - [ "
                     for l in s[v]:
                         ls += f"[{l}](<{v}/solution.{l2x(l)}>) | "
