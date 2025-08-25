@@ -2,7 +2,8 @@ import os
 
 def gen_docs():
     subdirectories = []
-    m = dict()
+    t = dict()
+    s = dict()
     for dir in os.listdir('.'):
         if dir[0] == '.' or not os.path.isdir(dir):
             continue
@@ -12,21 +13,53 @@ def gen_docs():
                 tags = content.split(' ')
                 for tag in tags:
                     name = tag[1:]
-                    if not name in m:
-                        m[name] = []
-                    m[name].append(dir)
+                    if not name in t:
+                        t[name] = []
+                    t[name].append(dir)
         except FileNotFoundError:
             print(f"Error: The file '{dir}/tags.txt' was not found.")
         except Exception as e:
             print(f"An error occurred: {e}")
+        for f in os.listdir(dir):
+            if os.path.isfile(f"{dir}/{f}"):
+                extension = f.split('.')[1]
+                language = x2l(extension)
+                if language:
+                    if not dir in s:
+                        s[dir] = []
+                    s[dir].append(language)
     try:
         with open(f"README.md", "w") as file:
-            for k in m:
+            for k in t:
                 file.write(f"## {k}\n")
-                for v in m[k]:
-                    file.write(f" - [{v}](<{v}>)\n")
+                for v in t[k]:
+                    file.write(f"- [{v}](https://leetcode.com/problems/<{v.lower().replace(' ', '-')}>)\n")
+                    ls = "    - [ "
+                    for l in s[v]:
+                        ls += f"[{l}](<{v}/solution.{l2x(l)}>) | "
+                    file.write(ls[:-2] + "]\n")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+def x2l(x: str) -> str:
+    if x == 'py':
+        return 'Python'
+    elif x == 'cpp':
+        return 'C++'
+    elif x == 'java':
+        return 'Java'
+    else:
+        return None
+
+def l2x(l: str) -> str:
+    if l == 'Python':
+        return 'py'
+    elif l == 'C++':
+        return 'cpp'
+    elif l == 'Java':
+        return 'java'
+    else:
+        return None
 
 if __name__ == '__main__':
     gen_docs()

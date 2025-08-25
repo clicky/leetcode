@@ -1,1 +1,1 @@
-#array #frequency #voting #boyermoore
+#array #frequency #boyerMooreVoting
