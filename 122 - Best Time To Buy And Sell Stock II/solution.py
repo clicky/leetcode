@@ -1,12 +1,15 @@
+from typing import List
+
 class Solution:
 
-    # Must buy before sell
-    # Either B/S or skip
     def maxProfit(self, prices: List[int]) -> int:
         # return self.recursion(prices, 0, True)
-        dp = [[-1, -1] for i in range(len(prices))]
-        return self.topDownMemo(prices, 0, dp, True)
+        # dp = [[-1,-1] for i in range(len(prices))]
+        # return self.topDown(prices, 0, dp, True)
+        # return self.bottomUp(prices)
+        return self.greedy(prices)
 
+    # Must either buy or sell, but cant sell before buying. So keep track of side for current iteration
     def recursion(self, prices: List[int], i: int, isBuy: bool) -> int:
         # Base case
         if i == len(prices):
@@ -22,7 +25,7 @@ class Solution:
             profit = max(sell, skip)
         return profit
 
-    def topDownMemo(self, prices: List[int], i: int, dp: [], isBuy: bool) -> int:
+    def topDown(self, prices: List[int], i: int, dp: [], isBuy: bool) -> int:
         # Base case
         if i == len(prices):
             return 0
@@ -45,4 +48,35 @@ class Solution:
             skip = self.topDownMemo(prices, i + 1, dp, False)
             profit = max(sell, skip)
         dp[i][idx] = profit
+        return profit
+
+    # Bottom up refers to building a 2D matrix and working from the bottom up to (0,0)
+    # If the recursive/top down approach looks forward then bottom up will have a loop going backwards
+    # The coordinates of the final call always match the first call into the recursive/top down solution
+    def bottomUp(self, prices: List[int]) -> int:
+        # We need an extra row as we are looking forward. Row at idx 0 is computed from idx 1 etc so we need n+1
+        n = len(prices)
+        dp = [[0, 0] for i in range(n + 1)]
+
+        for i in range(n - 1, -1, -1):
+            for j in range(2):
+                profit = 0
+                # Buy
+                if j == 0:
+                    buy = dp[i + 1][1] - prices[i]
+                    skip = dp[i + 1][0]
+                    profit = max(buy, skip)
+                else:
+                    sell = dp[i + 1][0] + prices[i]
+                    skip = dp[i + 1][1]
+                    profit = max(sell, skip)
+                dp[i][j] = profit
+
+        return dp[0][0]
+
+    def greedy(self, prices: List[int]) -> int:
+        profit = 0
+        for i in range(1, len(prices)):
+            if prices[i] > prices[i - 1]:
+                profit += prices[i] - prices[i - 1]
         return profit
