@@ -27,7 +27,7 @@
 ## slidingWindow
 - [121 - Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
     - [ [Python](<121 - Best Time To Buy And Sell Stock/solution.py>) ]
-## 2d-dp
+## dp-2d
 - [122 - Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)
     - [ [Python](<122 - Best Time To Buy And Sell Stock II/solution.py>) ]
 ## greedy
@@ -42,7 +42,7 @@
 ## rotateArray
 - [189 - Rotate Array](https://leetcode.com/problems/rotate-array)
     - [ [Python](<189 - Rotate Array/solution.py>) ]
-## 1d-dp
+## dp-1d
 - [322 - Coin Change](https://leetcode.com/problems/coin-change)
     - [ [Python](<322 - Coin Change/solution.py>) ]
 - [76 - Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs)
