@@ -5,7 +5,7 @@ def gen_docs():
     t = dict()
     s = dict()
     for dir in os.listdir('.'):
-        if dir[0] == '.' or not os.path.isdir(dir):
+        if dir[0] == '.' or not os.path.isdir(dir) or dir[:5] == 'Notes':
             continue
         try:
             with open(f"{dir}/tags.txt", "r") as file:
@@ -30,7 +30,9 @@ def gen_docs():
                     s[dir].append(language)
     try:
         with open(f"README.md", "w") as file:
-            for k in t:
+            tags = list(t.keys())
+            tags.sort()
+            for k in tags:
                 file.write(f"## {k}\n")
                 for v in t[k]:
                     file.write(f"- [{v}](https://leetcode.com/problems/{v.split(' - ')[1].lower().replace(' ', '-')})\n")

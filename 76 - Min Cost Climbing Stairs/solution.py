@@ -4,8 +4,8 @@ class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
         # return min(self.recursive(cost, 0), self.recursive(cost, 1))
         # dp = [-1 for i in range(len(cost))]
-        # return min(self.topDown(cost, 0, dp), self.topDown(cost, 1, dp))
-        # return self.bottomUp(cost)
+        # return min(self.memoTopDown(cost, 0, dp), self.memoTopDown(cost, 1, dp))
+        # return self.tabBottomUp(cost)
         return self.optimised(cost)
 
     def recursive(self, cost: List[int], i: int) -> int:
@@ -15,17 +15,17 @@ class Solution:
         two = self.recursive(cost, i + 2) + cost[i]
         return min(one, two)
 
-    def topDown(self, cost: List[int], i: int, dp: []) -> int:
+    def memoTopDown(self, cost: List[int], i: int, dp: []) -> int:
         if i >= len(cost):
             return 0
         if dp[i] != -1:
             return dp[i]
-        one = self.topDown(cost, i + 1, dp) + cost[i]
-        two = self.topDown(cost, i + 2, dp) + cost[i]
+        one = self.memoTopDown(cost, i + 1, dp) + cost[i]
+        two = self.memoTopDown(cost, i + 2, dp) + cost[i]
         dp[i] = min(one, two)
         return dp[i]
 
-    def bottomUp(self, cost: List[int]) -> int:
+    def tabBottomUp(self, cost: List[int]) -> int:
         n = len(cost)
         dp = [0 for i in range(n)]
         dp[0] = cost[0]

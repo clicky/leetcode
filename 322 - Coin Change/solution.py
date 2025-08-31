@@ -4,8 +4,8 @@ class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         # res = self.recursive(coins, amount)
         # dp = [-1 for i in range(amount+1)]
-        # res = self.topDown(coins, amount, dp)
-        res = self.bottomUp(coins, amount)
+        # res = self.memoTopDown(coins, amount, dp)
+        res = self.tabBottomUp(coins, amount)
         return res if res <= amount else -1
 
     def recursive(self, coins: List[int], amount: int) -> int:
@@ -21,7 +21,7 @@ class Solution:
                 count = min(count, curr + 1)
         return count
 
-    def topDown(self, coins: List[int], amount: int, dp: []) -> int:
+    def memoTopDown(self, coins: List[int], amount: int, dp: []) -> int:
         if amount == 0:
             return 0
         if amount < 0:
@@ -31,13 +31,13 @@ class Solution:
         count = amount + 1
         for i in range(len(coins)):
             residual = amount - coins[i]
-            curr = self.topDown(coins, residual, dp)
+            curr = self.memoTopDown(coins, residual, dp)
             if curr != residual + 1:
                 count = min(count, curr + 1)
         dp[amount] = count
         return count
 
-    def bottomUp(self, coins: List[int], amount: int) -> int:
+    def tabBottomUp(self, coins: List[int], amount: int) -> int:
         dp = [amount + 1 for i in range(amount + 1)]
         dp[0] = 0
         for i in range(1, len(dp)):

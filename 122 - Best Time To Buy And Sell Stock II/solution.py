@@ -5,8 +5,8 @@ class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         # return self.recursion(prices, 0, True)
         # dp = [[-1,-1] for i in range(len(prices))]
-        # return self.topDown(prices, 0, dp, True)
-        # return self.bottomUp(prices)
+        # return self.memoTopDown(prices, 0, dp, True)
+        # return self.tabBottomUp(prices)
         return self.greedy(prices)
 
     # Must either buy or sell, but cant sell before buying. So keep track of side for current iteration
@@ -25,7 +25,7 @@ class Solution:
             profit = max(sell, skip)
         return profit
 
-    def topDown(self, prices: List[int], i: int, dp: [], isBuy: bool) -> int:
+    def memoTopDown(self, prices: List[int], i: int, dp: [], isBuy: bool) -> int:
         # Base case
         if i == len(prices):
             return 0
@@ -53,7 +53,7 @@ class Solution:
     # Bottom up refers to building a 2D matrix and working from the bottom up to (0,0)
     # If the recursive/top down approach looks forward then bottom up will have a loop going backwards
     # The coordinates of the final call always match the first call into the recursive/top down solution
-    def bottomUp(self, prices: List[int]) -> int:
+    def tabBottomUp(self, prices: List[int]) -> int:
         # We need an extra row as we are looking forward. Row at idx 0 is computed from idx 1 etc so we need n+1
         n = len(prices)
         dp = [[0, 0] for i in range(n + 1)]
