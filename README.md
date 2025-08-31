@@ -19,6 +19,8 @@
 ## dp-1d
 - [322 - Coin Change](https://leetcode.com/problems/coin-change)
     - [ [Python](<322 - Coin Change/solution.py>) ]
+- [55 - Jump Game](https://leetcode.com/problems/jump-game)
+    - [ [Python](<55 - Jump Game/solution.py>) ]
 - [76 - Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs)
     - [ [Python](<76 - Min Cost Climbing Stairs/solution.py>) ]
 ## dp-2d
@@ -30,6 +32,8 @@
 ## greedy
 - [122 - Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)
     - [ [Python](<122 - Best Time To Buy And Sell Stock II/solution.py>) ]
+- [55 - Jump Game](https://leetcode.com/problems/jump-game)
+    - [ [Python](<55 - Jump Game/solution.py>) ]
 ## rotateArray
 - [189 - Rotate Array](https://leetcode.com/problems/rotate-array)
     - [ [Python](<189 - Rotate Array/solution.py>) ]
