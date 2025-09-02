@@ -9,6 +9,8 @@
     - [ [Python](<26 - Remove Duplicates From Sorted Array/solution.py>) ]
 - [27 - Remove Element](https://leetcode.com/problems/remove-element)
     - [ [Python](<27 - Remove Element/solution.py>) ]
+- [274 - H-Index](https://leetcode.com/problems/h-index)
+    - [ [Python](<274 - H-Index/solution.py>) ]
 - [80 - Remove Duplicates From Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
     - [ [Python](<80 - Remove Duplicates From Sorted Array II/solution.py>) ]
 - [88 - Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
@@ -16,6 +18,9 @@
 ## boyerMooreVoting
 - [169 - Majority Element](https://leetcode.com/problems/majority-element)
     - [ [Python](<169 - Majority Element/solution.py>) ]
+## countSort
+- [274 - H-Index](https://leetcode.com/problems/h-index)
+    - [ [Python](<274 - H-Index/solution.py>) ]
 ## dp-1d
 - [322 - Coin Change](https://leetcode.com/problems/coin-change)
     - [ [Python](<322 - Coin Change/solution.py>) ]
@@ -44,6 +49,9 @@
 ## slidingWindow
 - [121 - Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
     - [ [Python](<121 - Best Time To Buy And Sell Stock/solution.py>) ]
+## sorting
+- [274 - H-Index](https://leetcode.com/problems/h-index)
+    - [ [Python](<274 - H-Index/solution.py>) ]
 ## twoPointers
 - [121 - Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
     - [ [Python](<121 - Best Time To Buy And Sell Stock/solution.py>) ]
