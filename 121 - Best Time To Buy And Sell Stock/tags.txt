@@ -1,1 +1,1 @@
-#array #twoPointer #slidingWindow
+#array #twoPointers #slidingWindow

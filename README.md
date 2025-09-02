@@ -19,6 +19,8 @@
 ## dp-1d
 - [322 - Coin Change](https://leetcode.com/problems/coin-change)
     - [ [Python](<322 - Coin Change/solution.py>) ]
+- [45 - Jump Game II](https://leetcode.com/problems/jump-game-ii)
+    - [ [Python](<45 - Jump Game II/solution.py>) ]
 - [55 - Jump Game](https://leetcode.com/problems/jump-game)
     - [ [Python](<55 - Jump Game/solution.py>) ]
 - [76 - Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs)
@@ -32,6 +34,8 @@
 ## greedy
 - [122 - Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)
     - [ [Python](<122 - Best Time To Buy And Sell Stock II/solution.py>) ]
+- [45 - Jump Game II](https://leetcode.com/problems/jump-game-ii)
+    - [ [Python](<45 - Jump Game II/solution.py>) ]
 - [55 - Jump Game](https://leetcode.com/problems/jump-game)
     - [ [Python](<55 - Jump Game/solution.py>) ]
 ## rotateArray
@@ -40,13 +44,15 @@
 ## slidingWindow
 - [121 - Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
     - [ [Python](<121 - Best Time To Buy And Sell Stock/solution.py>) ]
-## twoPointer
+## twoPointers
 - [121 - Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
     - [ [Python](<121 - Best Time To Buy And Sell Stock/solution.py>) ]
 - [26 - Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
     - [ [Python](<26 - Remove Duplicates From Sorted Array/solution.py>) ]
 - [27 - Remove Element](https://leetcode.com/problems/remove-element)
     - [ [Python](<27 - Remove Element/solution.py>) ]
+- [45 - Jump Game II](https://leetcode.com/problems/jump-game-ii)
+    - [ [Python](<45 - Jump Game II/solution.py>) ]
 - [80 - Remove Duplicates From Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
     - [ [Python](<80 - Remove Duplicates From Sorted Array II/solution.py>) ]
 - [88 - Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
