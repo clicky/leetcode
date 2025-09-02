@@ -6,9 +6,9 @@
 - [189 - Rotate Array](https://leetcode.com/problems/rotate-array)
     - [ [Python](<189 - Rotate Array/solution.py>) ]
 - [26 - Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
-    - [ [Python](<26 - Remove Duplicates From Sorted Array/solution.py>) ]
+    - [ [Java](<26 - Remove Duplicates From Sorted Array/Solution.java>) | [Python](<26 - Remove Duplicates From Sorted Array/solution.py>) ]
 - [27 - Remove Element](https://leetcode.com/problems/remove-element)
-    - [ [Python](<27 - Remove Element/solution.py>) ]
+    - [ [Java](<27 - Remove Element/Solution.java>) | [Python](<27 - Remove Element/solution.py>) ]
 - [274 - H-Index](https://leetcode.com/problems/h-index)
     - [ [Python](<274 - H-Index/solution.py>) ]
 - [80 - Remove Duplicates From Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
@@ -56,9 +56,9 @@
 - [121 - Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
     - [ [Python](<121 - Best Time To Buy And Sell Stock/solution.py>) ]
 - [26 - Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
-    - [ [Python](<26 - Remove Duplicates From Sorted Array/solution.py>) ]
+    - [ [Java](<26 - Remove Duplicates From Sorted Array/Solution.java>) | [Python](<26 - Remove Duplicates From Sorted Array/solution.py>) ]
 - [27 - Remove Element](https://leetcode.com/problems/remove-element)
-    - [ [Python](<27 - Remove Element/solution.py>) ]
+    - [ [Java](<27 - Remove Element/Solution.java>) | [Python](<27 - Remove Element/solution.py>) ]
 - [45 - Jump Game II](https://leetcode.com/problems/jump-game-ii)
     - [ [Python](<45 - Jump Game II/solution.py>) ]
 - [80 - Remove Duplicates From Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)

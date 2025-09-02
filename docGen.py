@@ -38,10 +38,16 @@ def gen_docs():
                     file.write(f"- [{v}](https://leetcode.com/problems/{v.split(' - ')[1].lower().replace(' ', '-')})\n")
                     ls = "    - [ "
                     for l in s[v]:
-                        ls += f"[{l}](<{v}/solution.{l2x(l)}>) | "
+                        ls += f"[{l}](<{v}/{getFilename(l2x(l))}>) | "
                     file.write(ls[:-2] + "]\n")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+def getFilename(x: str) -> str:
+    if x == 'java':
+        return 'Solution.java'
+    else:
+        return f"solution.{x}"
 
 def x2l(x: str) -> str:
     if x == 'py':
