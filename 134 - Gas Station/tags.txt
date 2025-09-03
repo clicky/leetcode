@@ -1,0 +1,1 @@
+#array #greedy #kadanes

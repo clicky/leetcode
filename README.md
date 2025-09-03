@@ -1,6 +1,8 @@
 ## array
 - [121 - Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
     - [ [Python](<121 - Best Time To Buy And Sell Stock/solution.py>) ]
+- [134 - Gas Station](https://leetcode.com/problems/gas-station)
+    - [ [Python](<134 - Gas Station/solution.py>) ]
 - [169 - Majority Element](https://leetcode.com/problems/majority-element)
     - [ [Python](<169 - Majority Element/solution.py>) ]
 - [189 - Rotate Array](https://leetcode.com/problems/rotate-array)
@@ -41,10 +43,15 @@
 ## greedy
 - [122 - Best Time To Buy And Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)
     - [ [Python](<122 - Best Time To Buy And Sell Stock II/solution.py>) ]
+- [134 - Gas Station](https://leetcode.com/problems/gas-station)
+    - [ [Python](<134 - Gas Station/solution.py>) ]
 - [45 - Jump Game II](https://leetcode.com/problems/jump-game-ii)
     - [ [Python](<45 - Jump Game II/solution.py>) ]
 - [55 - Jump Game](https://leetcode.com/problems/jump-game)
     - [ [Python](<55 - Jump Game/solution.py>) ]
+## kadanes
+- [134 - Gas Station](https://leetcode.com/problems/gas-station)
+    - [ [Python](<134 - Gas Station/solution.py>) ]
 ## prefixSum
 - [238 - Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)
     - [ [Python](<238 - Product of Array Except Self/solution.py>) ]
