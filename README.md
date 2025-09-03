@@ -5,6 +5,8 @@
     - [ [Python](<169 - Majority Element/solution.py>) ]
 - [189 - Rotate Array](https://leetcode.com/problems/rotate-array)
     - [ [Python](<189 - Rotate Array/solution.py>) ]
+- [238 - Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)
+    - [ [Python](<238 - Product of Array Except Self/solution.py>) ]
 - [26 - Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array)
     - [ [Java](<26 - Remove Duplicates From Sorted Array/Solution.java>) | [Python](<26 - Remove Duplicates From Sorted Array/solution.py>) ]
 - [27 - Remove Element](https://leetcode.com/problems/remove-element)
@@ -43,6 +45,9 @@
     - [ [Python](<45 - Jump Game II/solution.py>) ]
 - [55 - Jump Game](https://leetcode.com/problems/jump-game)
     - [ [Python](<55 - Jump Game/solution.py>) ]
+## prefixSum
+- [238 - Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)
+    - [ [Python](<238 - Product of Array Except Self/solution.py>) ]
 ## rotateArray
 - [189 - Rotate Array](https://leetcode.com/problems/rotate-array)
     - [ [Python](<189 - Rotate Array/solution.py>) ]
